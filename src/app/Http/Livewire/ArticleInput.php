@@ -13,7 +13,7 @@ class ArticleInput extends Component
         'edit' => 'edit'
     ];
 
-    protected $rules = [ // ここがないと wire:model に反映されない
+    protected $rules = [ // ここがないと wire:model に反映されない。
         'article.title' => ['required'],
         'article.content' => ['required'],
     ];
