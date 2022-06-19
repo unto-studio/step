@@ -35,3 +35,5 @@ Route::middleware([
 });
 
 Route::get('/article', fn() => view('article.index'));
+
+Route::get('/dairyreport', fn() => view('dairy_report.index'));
