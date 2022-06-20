@@ -7,7 +7,7 @@
 
     <div class="p-5">
         <h1 class="text-3xl mb-4">
-            livewire のCRUDサンプル
+            Unto プログラミング教室 Dairy Report
         </h1>
         <div class="grid grid-cols-2 gap-7">
             <div>

@@ -7,6 +7,14 @@
         @endif
     </div>
     <div class="mb-3">
+        <label>日付</label>
+        <br>
+        <input type="text" class="border w-full p-1" wire:model="dairy_report.lesson_date">
+        @error('dairy_repot.lesson_date')
+            <span class="text-red-500">{{ $message }}</span>
+        @enderror
+    </div>
+    <div class="mb-3">
         <label>目標</label>
         <br>
         <input type="text" class="border w-full p-1" wire:model="dairy_report.goal">

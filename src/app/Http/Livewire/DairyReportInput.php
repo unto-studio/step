@@ -15,6 +15,8 @@ class DairyReportInput extends Component
     ];
 
     protected $rules = [ // ここがないと wire:model に反映されない
+        'dairy_report.lesson_date' => ['required'],
+        'dairy_report.user_id' => ['required'],
         'dairy_report.goal' => ['required'],
         'dairy_report.results' => ['required'],
         'dairy_report.issue' => ['required'],
@@ -45,10 +47,10 @@ class DairyReportInput extends Component
 
     public function save()
     {
-        $this->validate();
+        //$this->validate();
 
-        $id = Auth::id();
-        $this->dairy_report->user_id = $id;
+        //$id = Auth::id();
+        $this->dairy_report->user_id = 1;
         $this->dairy_report->save();
 
         session()->flash('status', '保存が完了しました。');
