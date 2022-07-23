@@ -42,7 +42,7 @@ class ArticleInput extends Component
 
     public function save()
     {
-        $this->validate();
+        //$this->validate();
         $this->article->save();
 
         session()->flash('status', '保存が完了しました。');
