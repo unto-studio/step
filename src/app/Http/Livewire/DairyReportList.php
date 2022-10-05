@@ -15,7 +15,6 @@ class DairyReportList extends Component
         'destroy' => 'destroy'
     ];
 
-
     public function render()
     {
         $dairy_reports = DailyReport::paginate(10);
@@ -23,9 +22,7 @@ class DairyReportList extends Component
         return view('livewire.dairy-report-list', [
             'dairy_reports' => $dairy_reports,
         ]);
-
     }
-
 
     public function destroy(DailyReport $dairy_report)
     {
